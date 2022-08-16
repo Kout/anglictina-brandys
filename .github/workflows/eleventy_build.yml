@@ -5,12 +5,13 @@ jobs:
   build_deploy:
     runs-on: ubuntu-22.04
     steps:
+      - name: Prebuild
+        run: npm install
       - uses: actions/checkout@master
       - name: Build
         uses: TartanLlama/actions-eleventy@master
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
-        run: npm install
         with:
           publish_dir: _site
           publish_branch: gh-pages
