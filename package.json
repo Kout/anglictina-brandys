@@ -25,7 +25,5 @@
   "homepage": "https://github.com/11ty/eleventy-base-blog#readme",
   "devDependencies": {
     "@11ty/eleventy": "^1.0.2",
-    "markdown-it": "^13.0.1",
-    "markdown-it-anchor": "^8.6.4"
   }
 }
